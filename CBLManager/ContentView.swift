@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var manager: CBLManager
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        CBLList()
     }
 }
 

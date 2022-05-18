@@ -11,6 +11,20 @@
 		299BA990282E7BBD0033E29B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA98F282E7BBD0033E29B /* ContentView.swift */; };
 		299BA992282E7BBE0033E29B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299BA991282E7BBE0033E29B /* Assets.xcassets */; };
 		299BA995282E7BBE0033E29B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299BA994282E7BBE0033E29B /* Preview Assets.xcassets */; };
+		299BA99E282E8B9C0033E29B /* CBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA99D282E8B9C0033E29B /* CBL.swift */; };
+		299BA9A0283014C30033E29B /* CBLList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA99F283014C30033E29B /* CBLList.swift */; };
+		299BA9A2283020510033E29B /* CBLDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9A1283020510033E29B /* CBLDetail.swift */; };
+		299BA9A428315CF20033E29B /* Engage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9A328315CF20033E29B /* Engage.swift */; };
+		299BA9A628315DB10033E29B /* Investigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9A528315DB10033E29B /* Investigate.swift */; };
+		299BA9A8283160470033E29B /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9A7283160470033E29B /* Act.swift */; };
+		299BA9AE28326D1E0033E29B /* CBLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9AD28326D1E0033E29B /* CBLManager.swift */; };
+		299BA9B0283296380033E29B /* CBLRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9AF283296380033E29B /* CBLRow.swift */; };
+		299BA9B22833C6990033E29B /* CBLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9B12833C6990033E29B /* CBLView.swift */; };
+		299BA9B72833D4CC0033E29B /* EngageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9B62833D4CC0033E29B /* EngageRow.swift */; };
+		299BA9B92833DC540033E29B /* EngageForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9B82833DC540033E29B /* EngageForm.swift */; };
+		299BA9BC28341F8D0033E29B /* InvestigateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9BB28341F8D0033E29B /* InvestigateRow.swift */; };
+		299BA9BE283424330033E29B /* InvestigateForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9BD283424330033E29B /* InvestigateForm.swift */; };
+		299BA9C1283532A40033E29B /* ActRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BA9C0283532A40033E29B /* ActRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +33,20 @@
 		299BA98F282E7BBD0033E29B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		299BA991282E7BBE0033E29B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		299BA994282E7BBE0033E29B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		299BA99D282E8B9C0033E29B /* CBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBL.swift; sourceTree = "<group>"; };
+		299BA99F283014C30033E29B /* CBLList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBLList.swift; sourceTree = "<group>"; };
+		299BA9A1283020510033E29B /* CBLDetail.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = CBLDetail.swift; sourceTree = "<group>"; tabWidth = 3; wrapsLines = 1; };
+		299BA9A328315CF20033E29B /* Engage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engage.swift; sourceTree = "<group>"; };
+		299BA9A528315DB10033E29B /* Investigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investigate.swift; sourceTree = "<group>"; };
+		299BA9A7283160470033E29B /* Act.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
+		299BA9AD28326D1E0033E29B /* CBLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBLManager.swift; sourceTree = "<group>"; };
+		299BA9AF283296380033E29B /* CBLRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBLRow.swift; sourceTree = "<group>"; };
+		299BA9B12833C6990033E29B /* CBLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBLView.swift; sourceTree = "<group>"; };
+		299BA9B62833D4CC0033E29B /* EngageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngageRow.swift; sourceTree = "<group>"; };
+		299BA9B82833DC540033E29B /* EngageForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngageForm.swift; sourceTree = "<group>"; };
+		299BA9BB28341F8D0033E29B /* InvestigateRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestigateRow.swift; sourceTree = "<group>"; };
+		299BA9BD283424330033E29B /* InvestigateForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestigateForm.swift; sourceTree = "<group>"; };
+		299BA9C0283532A40033E29B /* ActRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +79,10 @@
 		299BA98C282E7BBD0033E29B /* CBLManager */ = {
 			isa = PBXGroup;
 			children = (
+				299BA9A9283179E90033E29B /* Resources */,
+				299BA99C282E7FA70033E29B /* Models */,
+				299BA99B282E7F210033E29B /* Views */,
+				299BA9A1283020510033E29B /* CBLDetail.swift */,
 				299BA98D282E7BBD0033E29B /* CBLManagerApp.swift */,
 				299BA98F282E7BBD0033E29B /* ContentView.swift */,
 				299BA991282E7BBE0033E29B /* Assets.xcassets */,
@@ -65,6 +97,72 @@
 				299BA994282E7BBE0033E29B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		299BA99B282E7F210033E29B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				299BA9BF283532870033E29B /* Act */,
+				299BA9BA28341F780033E29B /* Investigate */,
+				299BA9B52833D4BC0033E29B /* Engage */,
+				299BA9B32833D4910033E29B /* CBL */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		299BA99C282E7FA70033E29B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				299BA99D282E8B9C0033E29B /* CBL.swift */,
+				299BA9A328315CF20033E29B /* Engage.swift */,
+				299BA9A528315DB10033E29B /* Investigate.swift */,
+				299BA9A7283160470033E29B /* Act.swift */,
+				299BA9AD28326D1E0033E29B /* CBLManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		299BA9A9283179E90033E29B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		299BA9B32833D4910033E29B /* CBL */ = {
+			isa = PBXGroup;
+			children = (
+				299BA99F283014C30033E29B /* CBLList.swift */,
+				299BA9AF283296380033E29B /* CBLRow.swift */,
+				299BA9B12833C6990033E29B /* CBLView.swift */,
+			);
+			path = CBL;
+			sourceTree = "<group>";
+		};
+		299BA9B52833D4BC0033E29B /* Engage */ = {
+			isa = PBXGroup;
+			children = (
+				299BA9B62833D4CC0033E29B /* EngageRow.swift */,
+				299BA9B82833DC540033E29B /* EngageForm.swift */,
+			);
+			path = Engage;
+			sourceTree = "<group>";
+		};
+		299BA9BA28341F780033E29B /* Investigate */ = {
+			isa = PBXGroup;
+			children = (
+				299BA9BB28341F8D0033E29B /* InvestigateRow.swift */,
+				299BA9BD283424330033E29B /* InvestigateForm.swift */,
+			);
+			path = Investigate;
+			sourceTree = "<group>";
+		};
+		299BA9BF283532870033E29B /* Act */ = {
+			isa = PBXGroup;
+			children = (
+				299BA9C0283532A40033E29B /* ActRow.swift */,
+			);
+			path = Act;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +235,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299BA9A0283014C30033E29B /* CBLList.swift in Sources */,
+				299BA99E282E8B9C0033E29B /* CBL.swift in Sources */,
+				299BA9BC28341F8D0033E29B /* InvestigateRow.swift in Sources */,
+				299BA9B0283296380033E29B /* CBLRow.swift in Sources */,
+				299BA9B22833C6990033E29B /* CBLView.swift in Sources */,
+				299BA9BE283424330033E29B /* InvestigateForm.swift in Sources */,
+				299BA9A628315DB10033E29B /* Investigate.swift in Sources */,
+				299BA9B72833D4CC0033E29B /* EngageRow.swift in Sources */,
+				299BA9C1283532A40033E29B /* ActRow.swift in Sources */,
+				299BA9A428315CF20033E29B /* Engage.swift in Sources */,
+				299BA9AE28326D1E0033E29B /* CBLManager.swift in Sources */,
+				299BA9A8283160470033E29B /* Act.swift in Sources */,
+				299BA9B92833DC540033E29B /* EngageForm.swift in Sources */,
 				299BA990282E7BBD0033E29B /* ContentView.swift in Sources */,
 				299BA98E282E7BBD0033E29B /* CBLManagerApp.swift in Sources */,
+				299BA9A2283020510033E29B /* CBLDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CBLManager/Preview Content\"";
+				DEVELOPMENT_TEAM = 8YQ35HP37L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +408,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CBLManager/Preview Content\"";
+				DEVELOPMENT_TEAM = 8YQ35HP37L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

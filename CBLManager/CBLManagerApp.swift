@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct CBLManagerApp: App {
+    @StateObject private var manager = CBLManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(manager)
         }
     }
 }
