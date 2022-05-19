@@ -15,14 +15,17 @@ struct EngageForm: View {
             Form{
                 Section(header: Text("BigIdea")){
                     TextEditor( text: $engage.bigIdea)
+                        .frame(minHeight: 60, alignment: .leading)
                     
                 }
                 Section(header:Text("Essential Question")){
                     TextEditor(text: $engage.essentialQuestion)
+                        .frame(minHeight: 60, alignment: .leading)
                 }
                 
                 Section(header:Text("Challenge")){
                     TextEditor(text: $engage.challenge)
+                        .frame(minHeight: 60, alignment: .leading)
                 }
             }
             

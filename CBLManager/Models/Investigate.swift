@@ -12,11 +12,11 @@ struct Investigate: Codable,Hashable {
     var guidingQuestions: [GuidingQuestion] = []
     var synthesis: String
     
-    init(synthesis: String, guidingQuestion: GuidingQuestion){
+    init(synthesis: String = "", guidingQuestion: GuidingQuestion ){
         self.synthesis = synthesis
         self.guidingQuestions.append(guidingQuestion)
     }
-    init(synthesis: String, guidingQuestion: [GuidingQuestion]){
+    init(synthesis: String = "", guidingQuestion: [GuidingQuestion] = []){
         self.synthesis = synthesis
         self.guidingQuestions = guidingQuestion
     }

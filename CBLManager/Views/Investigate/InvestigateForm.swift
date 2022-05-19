@@ -40,6 +40,7 @@ struct InvestigateForm: View {
                                     .multilineTextAlignment(.leading)
                                     
                                 TextEditor(text: $investigate.guidingQuestions.first(where: {$0.id == question.id})!.question)
+                                    .frame(minHeight: 37, alignment: .leading)
                             }
                             .frame(alignment: .leading)
                             
@@ -50,6 +51,7 @@ struct InvestigateForm: View {
                                     .multilineTextAlignment(.leading)
                                     
                                 TextEditor(text: $investigate.guidingQuestions.first(where: {$0.id == question.id})!.guidingActivity)
+                                    .frame(minHeight: 37, alignment: .leading)
                             }
                             .frame(alignment: .leading)
                             VStack(alignment: .leading){
@@ -59,6 +61,7 @@ struct InvestigateForm: View {
                                     .multilineTextAlignment(.leading)
                                     
                                 TextEditor(text: $investigate.guidingQuestions.first(where: {$0.id == question.id})!.resource)
+                                    .frame(minHeight: 37, alignment: .leading)
                             }
                             .frame(alignment: .leading)
                             } label: {
@@ -78,7 +81,7 @@ struct InvestigateForm: View {
                                 .multilineTextAlignment(.leading)
                                 
                             TextEditor(text: $newGuidingQuestion.question)
-                                .frame(width: 310, height: 37, alignment: .leading)
+                                .frame(minHeight: 37, alignment: .leading)
                                 .padding(.top,-5)
                         }
 
@@ -90,7 +93,7 @@ struct InvestigateForm: View {
                                 .multilineTextAlignment(.leading)
                                 
                             TextEditor(text: $newGuidingQuestion.guidingActivity)
-                                .frame(width: 310, height: 37, alignment: .leading)
+                                .frame(minHeight: 37, alignment: .leading)
                                 .padding(.top,-5)
                         }
 
@@ -101,7 +104,7 @@ struct InvestigateForm: View {
                                 .multilineTextAlignment(.leading)
                                 
                             TextEditor(text: $newGuidingQuestion.resource)
-                                .frame(width: 310, height: 37, alignment: .leading)
+                                .frame(minHeight: 37, alignment: .leading)
                                 .padding(.top,-5)
                         }
                         .frame(alignment: .leading)
@@ -129,7 +132,7 @@ struct InvestigateForm: View {
                 }
                 Section(header:Text("Synthesis")){
                         TextEditor(text: $investigate.synthesis)
-                            .frame(width: 310, height: 60, alignment: .leading)
+                            .frame(minHeight: 60, alignment: .leading)
                             .padding(.top,-5)
 
                 }

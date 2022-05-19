@@ -9,13 +9,25 @@ import SwiftUI
 
 struct CBLList: View {
     @EnvironmentObject var manager: CBLManager
+    @State private var isExpanded = false
     var body: some View {
-        NavigationView {
             List {
                 Section {
                     if(!manager.manager.isEmpty){
                         ForEach(manager.manager, id: \.id){ CBL in
-                            CBLRow(CBL: CBL)
+                            
+                            CBLRow(CBL: CBL).environmentObject(CBLManager())
+
+                        }
+                        .onDelete { index in
+                            manager.manager.remove(atOffsets: index)
+                            CBLManager.save(CBLManager: manager.manager) { result in
+                                if case .failure(let error) = result {
+                                    fatalError(error.localizedDescription)
+                                }
+                                
+                            }
+                            
                         }
                     }
                 }
@@ -26,7 +38,7 @@ struct CBLList: View {
             .toolbar {
                 ToolbarItem(placement: .primaryAction){
                     Button(action: {
-                        
+                        isExpanded.toggle()
                     }) {
                         VStack{
                             Label("New", systemImage: "plus")
@@ -35,7 +47,24 @@ struct CBLList: View {
                 }
                 
             }
-        }
+            .sheet(isPresented: $isExpanded) {
+                NavigationView{
+                    CBLAdd()
+                        .toolbar {
+                            ToolbarItem(placement: .confirmationAction) {
+                                Button{
+                                    isExpanded.toggle()
+                                } label: {
+                                    Text("Done")
+                                }
+                            }
+                        }
+                }
+            }
+            .onAppear{
+                print(manager.manager)
+            }
+        
     }
 }
 

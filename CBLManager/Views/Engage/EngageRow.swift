@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct EngageRow: View {
-    @Environment(\.colorScheme) var colorScheme
+    
     var CBL: CBL
     @EnvironmentObject var manager: CBLManager
     @State private var isExpanded : Bool = false
     @State private var openedSheet = false
-    
+    @Environment(\.colorScheme) var colorScheme
     var CBLIndex: Int {
-        manager.manager.firstIndex(where: {$0.id == CBL.id})!
+        print(manager.manager)
+        print(CBL.id)
+        return manager.manager.firstIndex(where: {$0.id == CBL.id})!
     }
 
     var body: some View {
@@ -57,11 +59,7 @@ struct EngageRow: View {
                 NavigationView {
                     EngageForm(engage: $manager.manager[CBLIndex].engage)
                         .toolbar {
-                            ToolbarItem(placement: .cancellationAction) {
-                                Button("Cancel"){
-                                    openedSheet = false
-                                }
-                            }
+                            
                             ToolbarItem(placement: .confirmationAction) {
                                 Button("Save"){
                                     openedSheet = false

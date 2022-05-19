@@ -13,7 +13,7 @@ struct Engage: Codable,Hashable {
     var challenge: String
 
     
-    init(bigIdea: String, essentialQuestion: String, challenge: String){
+    init(bigIdea: String = "", essentialQuestion: String = "", challenge: String = ""){
         self.bigIdea = bigIdea
         self.essentialQuestion = essentialQuestion
         self.challenge = challenge

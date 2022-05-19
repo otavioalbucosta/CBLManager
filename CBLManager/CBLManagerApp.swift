@@ -12,8 +12,21 @@ struct CBLManagerApp: App {
     @StateObject private var manager = CBLManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(manager)
+            NavigationView {
+                CBLList()
+                    .environmentObject(manager)
+            }
+            .onAppear {
+                CBLManager.load { result in
+                    switch result {
+                    case .failure(let error):
+                        fatalError(error.localizedDescription)
+                    case .success(let CBLs):
+                        manager.manager = CBLs
+                    }
+                    print(manager.manager)
+                }
+            }
         }
     }
 }

@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct CBLRow: View {
+    @EnvironmentObject var manager: CBLManager
     var CBL: CBL
     var body: some View {
         NavigationLink{
             CBLView(CBL:CBL)
+                .environmentObject(manager)
         } label: {
             HStack {
                 ZStack {
@@ -21,7 +23,7 @@ struct CBLRow: View {
                         .font(.system(size: 30))
                 }
                 .frame(width: 60, height: 60, alignment: .leading)
-                Text(CBL.title)
+                Text(CBL.id.uuidString)
                     .font(.title2)
             }
             .padding()

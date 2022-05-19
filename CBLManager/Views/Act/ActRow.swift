@@ -24,7 +24,7 @@ struct ActRow: View {
             VStack {
                 HStack {
             
-                    Label("Engage", systemImage: Act.icon)
+                    Label("Act", systemImage: Act.icon)
                         .font(.title)
                         .imageScale(.large)
                         .foregroundColor(.blue)
@@ -56,11 +56,6 @@ struct ActRow: View {
                 NavigationView {
                     EngageForm(engage: $manager.manager[CBLIndex].engage)
                         .toolbar {
-                            ToolbarItem(placement: .cancellationAction) {
-                                Button("Cancel"){
-                                    openedSheet = false
-                                }
-                            }
                             ToolbarItem(placement: .confirmationAction) {
                                 Button("Save"){
                                     openedSheet = false

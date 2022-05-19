@@ -12,7 +12,7 @@ struct Act: Codable,Hashable {
     var implementation: String
     var evaluation: String
     
-    init(solution:String,implementation: String, evaluation: String){
+    init(solution:String = "",implementation: String = "", evaluation: String = ""){
         self.solution = solution
         self.implementation = implementation
         self.evaluation = evaluation

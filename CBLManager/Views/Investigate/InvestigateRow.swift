@@ -57,11 +57,7 @@ struct InvestigateRow: View {
                 NavigationView {
                     InvestigateForm(investigate: $manager.manager[CBLIndex].investigate)
                         .toolbar {
-                            ToolbarItem(placement: .cancellationAction) {
-                                Button("Cancel"){
-                                    openedSheet = false
-                                }
-                            }
+                            
                             ToolbarItem(placement: .confirmationAction) {
                                 Button("Save"){
                                     openedSheet = false
