@@ -63,6 +63,13 @@ struct EngageRow: View {
                             ToolbarItem(placement: .confirmationAction) {
                                 Button("Save"){
                                     openedSheet = false
+                                    CBLManager.save(CBLManager: manager.manager) { result in
+                                    if case .failure(let error) = result {
+                                        fatalError(error.localizedDescription)
+                                    }
+                                    print(manager.manager)
+                                    print(CBLManager().manager)
+                                }
                                 }
                             }
                         }
