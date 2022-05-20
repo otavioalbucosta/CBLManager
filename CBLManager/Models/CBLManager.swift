@@ -18,7 +18,8 @@ class CBLManager: ObservableObject {
         .appendingPathComponent("CBLManager.data")
     }
     
-    static func load(completion: @escaping (Result<[CBL],Error>)-> Void){
+    static func load(completion: @escaping (Result<[CBL],Error>)-> Void) -> [CBL]{
+        var CBLManager: [CBL] = []
         DispatchQueue.global(qos: .background).async {
             do {
                 let fileURL = try fileURL()
@@ -28,7 +29,7 @@ class CBLManager: ObservableObject {
                     }
                     return
                 }
-                let CBLManager = try JSONDecoder().decode([CBL].self, from: file.availableData)
+                CBLManager = try JSONDecoder().decode([CBL].self, from: file.availableData)
                 DispatchQueue.main.async {
                     completion(.success(CBLManager))
 
@@ -40,21 +41,21 @@ class CBLManager: ObservableObject {
                 }
             }
         }
+        return CBLManager
     }
     
-    static func load<T: Decodable>(filename: URL) -> T {
+    static func load(filename: URL = fileURL()) -> [CBL] {
         let data: Data
-
-
         do {
             data = try Data(contentsOf: filename)
         } catch {
-            fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
+            return []
+//            fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
         }
 
 
             let decoder = JSONDecoder()
-            return try! decoder.decode(T.self, from: data)
+        return try! decoder.decode([CBL].self, from: data)
         
     }
     

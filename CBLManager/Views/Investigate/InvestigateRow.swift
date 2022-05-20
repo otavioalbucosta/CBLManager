@@ -53,7 +53,7 @@ struct InvestigateRow: View {
             }
             .frame(height: isExpanded ? 300 : 150, alignment: .leading)
             .padding()
-            .sheet(isPresented: $openedSheet) {
+            .sheet(isPresented: $openedSheet){
                 NavigationView {
                     InvestigateForm(investigate: $manager.manager[CBLIndex].investigate)
                         .toolbar {
@@ -72,6 +72,7 @@ struct InvestigateRow: View {
                             }
                         }
                 }
+                
             }
         }
         

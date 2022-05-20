@@ -125,7 +125,7 @@ struct InvestigateForm: View {
                             }
 
                         } label: {
-                            Label(newGuidingQuestion.question == "" ? "Click to add a new view" : newGuidingQuestion.question, systemImage: "plus.circle")
+                            Label(newGuidingQuestion.question == "" ? "Click to add a new question" : newGuidingQuestion.question, systemImage: "plus.circle")
                         }
                             
                     }

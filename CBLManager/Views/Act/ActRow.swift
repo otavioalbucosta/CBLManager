@@ -54,7 +54,7 @@ struct ActRow: View {
             .padding()
             .sheet(isPresented: $openedSheet) {
                 NavigationView {
-                    EngageForm(engage: $manager.manager[CBLIndex].engage)
+                    ActForm(act: $manager.manager[CBLIndex].act)
                         .toolbar {
                             ToolbarItem(placement: .confirmationAction) {
                                 Button("Save"){

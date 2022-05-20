@@ -23,7 +23,7 @@ struct CBLRow: View {
                         .font(.system(size: 30))
                 }
                 .frame(width: 60, height: 60, alignment: .leading)
-                Text(CBL.id.uuidString)
+                Text(CBL.title)
                     .font(.title2)
             }
             .padding()

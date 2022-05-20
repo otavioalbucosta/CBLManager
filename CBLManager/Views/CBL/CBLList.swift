@@ -54,6 +54,7 @@ struct CBLList: View {
                             ToolbarItem(placement: .confirmationAction) {
                                 Button{
                                     isExpanded.toggle()
+                                    
                                 } label: {
                                     Text("Done")
                                 }
