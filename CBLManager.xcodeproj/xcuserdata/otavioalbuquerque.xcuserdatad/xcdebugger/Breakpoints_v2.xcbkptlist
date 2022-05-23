@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E413FE6C-5F92-4248-8D70-57795DCACCE2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2985BE52-66DF-46EB-BA9B-A99DB5C8AB3B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CBLManager/Views/Act/ActingRow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4179B8B7-E64C-4929-818F-814562421125"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CBLManager/Views/CBL/CBLView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "CBLView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "4179B8B7-E64C-4929-818F-814562421125 - 914412922b050f85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CBLManager.CBLView.manager.getter : CBLManager.CBLManager"
+                  moduleName = "CBLManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/otavioalbuquerque/Documents/CBLManager/CBLManager/Views/CBL/CBLView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "4179B8B7-E64C-4929-818F-814562421125 - afede4536fa0a013"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CBLManager.CBLView.$manager.getter : SwiftUI.EnvironmentObject&lt;CBLManager.CBLManager&gt;.Wrapper"
+                  moduleName = "CBLManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/otavioalbuquerque/Documents/CBLManager/CBLManager/Views/CBL/CBLView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

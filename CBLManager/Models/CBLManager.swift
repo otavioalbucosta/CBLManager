@@ -11,7 +11,7 @@ class CBLManager: ObservableObject {
     @Published var manager: [CBL] = load(filename: fileURL())
     
     private static func fileURL() -> URL {
-        try! FileManager.default.url(for: .documentDirectory,
+        return try! FileManager.default.url(for: .documentDirectory,
                                     in: .userDomainMask,
                                     appropriateFor: nil,
                                     create: false)
@@ -22,7 +22,7 @@ class CBLManager: ObservableObject {
         var CBLManager: [CBL] = []
         DispatchQueue.global(qos: .background).async {
             do {
-                let fileURL = try fileURL()
+                let fileURL = fileURL()
                 guard let file = try? FileHandle(forReadingFrom: fileURL) else {
                     DispatchQueue.main.async {
                         completion(.success([]))

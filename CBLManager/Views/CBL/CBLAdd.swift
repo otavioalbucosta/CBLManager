@@ -18,14 +18,17 @@ struct CBLAdd: View {
             }
         }
         .onDisappear {
-            manager.manager.append(NewCBL)
-            CBLManager.save(CBLManager: manager.manager) { result in
-                if case .failure(let error) = result {
-                    fatalError(error.localizedDescription)
+            if(NewCBL.title != "") {
+                manager.manager.append(NewCBL)
+                CBLManager.save(CBLManager: manager.manager) { result in
+                    if case .failure(let error) = result {
+                        fatalError(error.localizedDescription)
+                    }
+                    print(manager.manager)
+                    print(CBLManager().manager)
                 }
-                print(manager.manager)
-                print(CBLManager().manager)
             }
+            
         }
     }
 }
